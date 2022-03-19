@@ -1,7 +1,9 @@
 <script>
-import Tuto1 from './components/Tuto1.svelte';
+// import Tuto1 from './components/Tuto1.svelte';
+import App2 from './components/App2.svelte';
 </script>
 
-<Tuto1 />
+<App2 />
+
 
 <style lang="scss"></style>

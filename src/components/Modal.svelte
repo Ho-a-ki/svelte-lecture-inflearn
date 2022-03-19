@@ -12,13 +12,13 @@
 <div id="background" style="--display: {isOpenModal ? 'block' : 'none'};" on:click={closeModal}></div>
 <div id="modal" style="--display: {isOpenModal ? 'block' : 'none'};">
     <div class="modal">
-      <span>화이팅!!♥♥♥</span>
-       당신의 꿈을 응원합니다.
-      <img src="/images/licat.png" alt="">
-      <button on:click={closeModal} >종료하고 진짜 훈련하러 가기 GO! GO!</button>
-      <small>(그냥 닫기 버튼입니다.)</small>
+    <span>화이팅!!♥♥♥</span>
+    당신의 꿈을 응원합니다.
+    <img src="/images/licat.png" alt="">
+    <button on:click={closeModal} >종료하고 진짜 훈련하러 가기 GO! GO!</button>
+    <small>(그냥 닫기 버튼입니다.)</small>
     </div>
-  </div>
+</div>
 
 
 <style lang="scss">
