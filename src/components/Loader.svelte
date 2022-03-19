@@ -1,12 +1,41 @@
-<div class="sk-folding-cube">
-    <div class="sk-cube1 sk-cube"></div>
-    <div class="sk-cube2 sk-cube"></div>
-    <div class="sk-cube4 sk-cube"></div>
-    <div class="sk-cube3 sk-cube"></div>
+
+<script>
+  export let scale
+  export let absolute
+  export let fixed
+</script>
+
+<div class="loading" style="transform: scale({scale});"
+class:absolute
+class:fixed>
+  <div 
+  class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+  </div>
 </div>
 
 
-<style>
+<style lang="scss">
+    .loading {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    // padding: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    &.absolute {
+      position: absolute;
+    }
+    &.fixed {
+      position: fixed;
+    }
+  }
+
 .sk-folding-cube {
   margin: 20px auto;
   width: 40px;
@@ -14,6 +43,7 @@
   position: relative;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
+  
 }
 
 .sk-folding-cube .sk-cube {
